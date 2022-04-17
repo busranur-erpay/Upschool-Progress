@@ -43,3 +43,35 @@ Başlangıçta değer atamadan değişken tanımlamak istersek lazy ve lateinit 
 - Neden kullanılmaktadır ?
 - Nasıl kullanılmalıdır ?
 - Bir adet Tools (tools namespace) attribute kullanımını gösterir misiniz ? 
+
+### CEVAPLAR: TOOLS NAMESPACE
+
+   XML (Extensible Markup Language- Genişleyebilir İşaretleme Dili) bir etiketleme dilidir ve etiket isimleri programcı tarafından belirlenir. Farklı XML uygulamalarından birlikte kullanılan XML kaynakları aynı isimde etiketlere sahip olabilir. Bu çakışmayı önlemek için namespace (isim uzayı) ve prefix (ön ek) kullanılır. Namespace tanımlarken URI (Uniform Resource Identifier) namespace ismi olarak verilir. En yaygın kullanılanı URL (Uniform Resource Locator), diğeri ise URN (Uniform Resource Name) dir. URL ve URN'nin namespace olarak kullanım amacı namespacelerin tek olmasını sağlamaktır ve hangisinin kullanılacağı programcının tercihine bırakılmıştır. Bu şekilde namescape'lerin uniqu (tek) olması sağlanır. Çünkü aynı URL'den iki tane olamaz. Örneğin www.x.com adresi sadece bir tane olabilir. Prefix ise etiketlerin başında kullanılarak aynı isimdeki etiketlerin hangi namespace’e ait olduğunu gösterir ve çakışmasını engeller.
+  
+  Bir uygulama geliştirilirken tasarım tarafında yapılan değişiklerin nasıl göründüğünü veya compile edilince nasıl görüneceğini uygulamayı çalıştırmadan anında görebilmek için tools namespace kullanır. Uygulama çalıştırıldığında, derleme araçları bu özellikleri kaldırır. Böylece APK boyutu veya çalışma zamanı davranışı üzerinde hiçbir etkisi olmaz.
+- Tools namespace ile gelen özellikleri kullanabilmek için her XML dosyasının root öğesine tools namespace eklenir:
+  
+      xmlns:tools="http://schemas.android.com/tools"
+
+- Tools (tools namespace) Örnek Kullanım:
+
+      <androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+          xmlns:app="http://schemas.android.com/apk/res-auto"
+          xmlns:tools="http://schemas.android.com/tools"
+          android:layout_width="match_parent"
+          android:layout_height="match_parent"
+          tools:context=".MainActivity">
+          
+           <ImageView
+        android:id="@+id/dice"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="96dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:src="@drawable/empty_dice"
+        tools:src="@drawable/dice_1"
+        />
+      </androidx.constraintlayout.widget.ConstraintLayout>
