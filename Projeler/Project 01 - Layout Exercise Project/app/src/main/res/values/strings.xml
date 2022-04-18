@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">My Project</string>
+    <string name="lets_start">Let’s Start!</string>
+    <string name="start_now">Start Now</string>
+</resources>

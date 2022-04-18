@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".PremiumActivity">
+
+    <ImageView
+        android:id="@+id/premium_image"
+        android:layout_width="279dp"
+        android:layout_height="248dp"
+        android:layout_marginTop="30dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.598"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_premium_image" />
+
+    <TextView
+        android:id="@+id/getunlimited_text"
+        style="@style/EntryTitleStyle"
+        android:layout_width="250dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="15dp"
+        android:text="Get unlimited access!"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.496"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/premium_image" />
+
+    <TextView
+        android:id="@+id/tv_spannable_string"
+        style="@style/PremiumPaymentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:layout_marginEnd="15dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toStartOf="@+id/tv_spannable_string2"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/getunlimited_text"
+        app:lineHeight="25dp" />
+
+    <TextView
+        android:id="@+id/tv_spannable_string2"
+        style="@style/PremiumPaymentTextStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="TextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.304"
+        app:layout_constraintStart_toEndOf="@+id/tv_spannable_string"
+        app:layout_constraintTop_toBottomOf="@+id/getunlimited_text"
+        app:lineHeight="25dp" />
+
+    <TextView
+        android:id="@+id/monthly_text"
+        style="@style/PremiumMonthYearTitleStyle"
+        android:layout_width="45dp"
+        android:layout_height="17dp"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_premium_monthyeartext_image"
+        android:text="Monthly"
+        app:layout_constraintBottom_toTopOf="@+id/tv_spannable_string"
+        app:layout_constraintEnd_toEndOf="@+id/tv_spannable_string"
+        app:layout_constraintTop_toTopOf="@+id/tv_spannable_string"
+        app:layout_constraintVertical_bias="0.47" />
+
+    <TextView
+        android:id="@+id/yearly_text"
+        style="@style/PremiumMonthYearTitleStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:background="@drawable/ic_premium_yeartext_image"
+        android:text="Yearly"
+        app:layout_constraintBottom_toTopOf="@+id/tv_spannable_string2"
+        app:layout_constraintEnd_toEndOf="@+id/tv_spannable_string2"
+        app:layout_constraintTop_toTopOf="@+id/tv_spannable_string2" />
+
+    <Button
+        android:id="@+id/premium_button"
+        style="@style/ButtonStyle"
+        android:layout_width="191dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="194dp"
+        android:text="Go Premium"
+        app:layout_constraintEnd_toEndOf="@+id/tv_spannable_string2"
+        app:layout_constraintStart_toStartOf="@+id/tv_spannable_string"
+        app:layout_constraintTop_toBottomOf="@+id/getunlimited_text" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

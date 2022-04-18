@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <ImageView
+        android:id="@+id/main_image"
+        android:layout_width="231dp"
+        android:layout_height="234dp"
+        android:layout_marginTop="105dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/ic_main_image" />
+
+    <TextView
+        android:id="@+id/learnathome"
+        style="@style/EntryTitleStyle"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="74dp"
+        android:text="Learn at home!"
+        app:layout_constraintEnd_toEndOf="@+id/main_image"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/main_image"
+        app:layout_constraintTop_toBottomOf="@+id/main_image" />
+
+    <Button
+        android:id="@+id/startnow_button"
+        android:layout_width="186dp"
+        android:layout_height="58dp"
+        android:layout_marginTop="73dp"
+        android:text="@string/start_now"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/effective"
+        style="@style/ButtonStyle" />
+
+    <TextView
+        android:id="@+id/effective"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="efficiently and effectively"
+        app:layout_constraintEnd_toEndOf="@+id/learnathome"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="@+id/learnathome"
+        app:layout_constraintTop_toBottomOf="@+id/learnathome"
+        style="@style/HomeSubTitleStyle" />
+</androidx.constraintlayout.widget.ConstraintLayout>
