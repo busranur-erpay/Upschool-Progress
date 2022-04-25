@@ -94,7 +94,7 @@ P.S. [Bu linkten](https://developer.android.com/guide/topics/ui/look-and-feel/fo
 :white_flower: Font family dosyası oluşturmak için <b>res>font>New>Font Resource File</b> yolunu takip ederek açılan pencerede file name alanı doldurulur ve OK butonuna basılır. Bu işlemden sonra editörde yeni font XML kaynağı açılır. Açılan XML dosyasında bulunan <b><font></b> tag'larını kullanarak bir font için style, weight gibi özellikler tanımlarız.
 
 <img  src="https://user-images.githubusercontent.com/77737341/165010970-6cc9bbf0-b3f7-4783-97a7-9bb7a271187b.png">   
-<img  src="https://user-images.githubusercontent.com/77737341/165011205-5030156d-e300-44c5-9b34-c988c1318d96.png">      
+<img src="https://user-images.githubusercontent.com/77737341/165011205-5030156d-e300-44c5-9b34-c988c1318d96.png">      
    
 - ### my_font.xml  
 
