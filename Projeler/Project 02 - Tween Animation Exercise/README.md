@@ -2,7 +2,7 @@
 
 This project is my animation exercise project.I created an XML animation file using all of the Tween Animation alpha, scale, translate, rotate properties and started the animation on an ImageView with buttons.Each button starts different animation property on an ImageView. Also, in this project, I realized the use of animation using DataBinding.
 <br>
-## Project link: 
+## Project link: https://github.com/busranur-erpay/Android-Tween-Animation-Sample
  
  **Elements:** 
 - :cherry_blossom: < alpha > : A fade-in or fade-out animation
