@@ -162,3 +162,14 @@ P.S. [Bu linkten](https://developer.android.com/guide/topics/ui/look-and-feel/fo
 - Property Animation ile ilgili olarak objectAnimator ile animator arasındaki farkı kısaca açıklayınız
 
 P.S. [Bu linkten](https://developer.android.com/guide/topics/resources/animation-resource#Property) faydalanabilirsiniz.
+   
+### CEVAPLAR: PROPERTY ANIMATION
+   
+<b>objectAnimator</b> : ValueAnimator'ın alt sınıfı olan objectAnimator, nesneler üzerinde animasyon özellikleri için destek sağlar. objectAnimator tek bir nesneye animasyon vermek istediğimiz zaman kullanılır. Belirli bir süre boyunca bir nesnenin belirli bir özelliğini canlandırır. Bu sınıfın constructors'ları, animasyon eklenecek nesne ile birlikte oynatılacak animasyon özelliğinin adını tanımlamak için parametreler alır. Uygun set / get işlevleri belirlenir ve animasyon özelliği canlandırmak için gerektiğinde bu işlevleri çağırır. 
+
+<b>Animator</b> : ValueAnimator kullanmak, Android'e animasyon eklemek için en kolay yollardan biridir. ValueAnimator bir görünümün özelliklerini (örneğin döndürme, ölçeklendirme,soldurma gibi) zaman içinde iki belirli değer arasında hareketlendirir. Bu sınıf, animasyon değerlerini hesaplayan ve bunları nesnelere set eden animasyonları çalıştırmak için basit bir zamanlama motoru sağlar. 
+   
+Farklar;
+- ObjectAnimator, bir listener ayarlama ve animasyon için görünüm özelliğini manuel olarak güncelleme sorumluluğunu ortadan kaldırır. Bu, ValueAnimator ile aynı etkiye sahip daha kısa kod ile sonuçlanır. 
+- Ayrıca temel fark, ValueAnimator durumunda, animasyonlu değerin nereye uygulanacağını belirleyeceğimiz onAnimationUpdate(...) metodunu override etmemiz gerekir. 
+- ObjectAnimator, ofFloat() fonksiyonunda ValueAnimator'dan farklı olarak, burada nesne iki ek argüman alır: biri canlandırmak istediğimiz görünüm diğeri ise canlandırmak istediğiniz görünümün özelliği. 
