@@ -3,7 +3,7 @@
 This exercise project is my first experience with Kotlin. This project is an assignment given from Android Development Program in UpSchool. 
 The purpose of this project is to create the layout design that is closest to the design in the [link] given to us. 
 This project has 3 pages: Main page, Start page and Premium page.
- 
+
  **Tasks:** 
 - :cherry_blossom:Download the design file from the given link and import it into the [Figma].
 - :cherry_blossom:Redesign the application with the export files from Figma and try to make designs close to original
